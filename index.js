@@ -15,12 +15,12 @@ module.exports = stylelint.createPlugin(ruleName, (enabled) =>
       possible: [true, false]
     });
 
-    const checkForDebugStatement = (rule) => {
-      if (enabled && JSON.stringify(rule).indexOf('@debug') > -1) {
+    const checkForDebugStatement = (atRule) => {
+      if (enabled && atRule.name === 'debug') {
         stylelint.utils.report({
           ruleName: ruleName,
           result: result,
-          node: rule,
+          node: atRule,
           message: messages.rejected
         });
       }
@@ -30,7 +30,7 @@ module.exports = stylelint.createPlugin(ruleName, (enabled) =>
       return;
     }
 
-    root.walkRules(checkForDebugStatement);
+    root.walkAtRules(checkForDebugStatement);
   }
 );
 
