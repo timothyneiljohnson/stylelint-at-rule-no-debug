@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-no-debug",
+  "name": "stylelint-at-rule-no-debug",
   "version": "1.0.0",
   "description": "A custom stylelint rule to catch usage of @debug statements",
   "main": "index.js",
