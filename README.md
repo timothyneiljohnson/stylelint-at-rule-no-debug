@@ -1,6 +1,6 @@
-# stylelint-at-rule-no-debug
+# stylelint-no-debug
 
-[![Build Status](https://travis-ci.org/timothyneiljohnson/stylelint-at-rule-no-debug.svg)](https://travis-ci.org/timothyneiljohnson/stylelint-at-rule-no-debug)
+[![Build Status](https://travis-ci.org/timothyneiljohnson/stylelint-no-debug.svg)](https://travis-ci.org/timothyneiljohnson/stylelint-no-debug)
 
 A [stylelint](https://github.com/stylelint/stylelint) custom rule to catch usage of `@debug` statements.
 
@@ -9,7 +9,7 @@ This rule will cause stylelint to warn you whenever `@debug` is used.
 ## Installation
 
 ```
-npm install stylelint-at-rule-no-debug
+npm install stylelint-property-unknown
 ```
 
 This plugin is compatible with v5.0.1+.
@@ -29,17 +29,17 @@ a { /* OK */
 
 ## Usage
 
-Add `"stylelint-at-rule-no-debug"` to your stylelint config `plugins` array, then add `at-rule-no-debug` to your rules, set to `true`.
+Add `"stylelint-no-debug"` to your stylelint config `plugins` array, then add `no-debug` to your rules, set to `true`.
 
 As follows:
 
 ```js
 {
   "plugins": [
-    "stylelint-at-rule-no-debug"
+    "stylelint-no-debug"
   ],
   "rules": {
-    "at-rule-no-debug": true
+    "no-debug": true
   }
 };
 ```
