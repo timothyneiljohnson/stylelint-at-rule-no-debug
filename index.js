@@ -1,6 +1,6 @@
 const assign = require('object-assign');
 const stylelint = require('stylelint');
-const ruleName = 'no-debug';
+const ruleName = 'at-rule-no-debug';
 const messages = stylelint.utils.ruleMessages(ruleName, {
   rejected: 'Remove debug statement'
 });
