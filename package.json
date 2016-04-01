@@ -1,6 +1,6 @@
 {
   "name": "stylelint-at-rule-no-debug",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A custom stylelint rule to catch usage of @debug statements",
   "main": "index.js",
   "scripts": {
@@ -25,11 +25,11 @@
   },
   "homepage": "https://github.com/timothyneiljohnson/stylelint-property-unknown#readme",
   "devDependencies": {
+    "stylelint-rule-tester": "^0.6.1",
     "tape": "^4.2.2"
   },
   "dependencies": {
     "object-assign": "^4.0.1",
-    "stylelint": ">=3.0.2",
-    "stylelint-rule-tester": "^0.6.1"
+    "stylelint": ">=3.0.2"
   }
 }
