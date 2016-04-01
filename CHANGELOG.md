@@ -11,3 +11,7 @@
 ## 1.0.2
 
 - Fix duplicate error issue.
+
+## 1.0.3
+
+- Update dependencies.
